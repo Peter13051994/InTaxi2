@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="team_orange.intaxi.ProfileActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorOrangeDarker"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Logout"
+                android:id="@+id/buttonLogout"
+                android:background="@drawable/rounded_button"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+
+                />
+
+            <Switch
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/visbilitySwitch"
+                android:text="Hidden"
+                android:theme="@style/SCBSwitch"
+                android:layout_weight="2"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/profile128"
+                android:text="Profile"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:backgroundTint="@color/colorProfileDashBoardBlue"/>
+
+            <Button
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/history128"
+                android:text="History"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:backgroundTint="@color/colorHistoryDashBoard"/>
+
+            <Button
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/rating2"
+                android:text="Rating"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:backgroundTint="@color/colorRatingDashBoard"/>
+
+            <Button
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/settings128"
+                android:text="Settings"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/latitude"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/longitude"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

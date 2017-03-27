@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".RegisterActivity"
+    android:weightSum="1"
+    android:background="@color/colorYellowLight">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextEmail"
+            android:minEms="15"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:minEms="15"
+                android:id="@+id/editTextPassword"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="0.83"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewPassword"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.17" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRedWarning"
+            android:visibility="gone"
+            android:id="@+id/textViewPasswordWarning"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextConfirmPassword"
+            android:minEms="15"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRedWarning"
+            android:visibility="gone"
+            android:id="@+id/textViewConfirmedPasswordWarning"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your or company name"
+            android:inputType="textPersonName"
+            android:minEms="15"
+            android:id="@+id/editTextName"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your or company ICO"
+            android:inputType="numberDecimal"
+            android:minEms="15"
+            android:id="@+id/editTextICO"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Next"
+            android:id="@+id/buttonSignup"
+            android:background="@color/colorOrangeDarker"/>
+        <TextView
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Already registered? Sign up"
+            android:id="@+id/textViewSignin"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</LinearLayout>

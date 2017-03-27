@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
+    <color name="colorBlack">#000</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#F6AE07</color>
+    <color name="colorYellowStrong">#FED500</color>
+    <color name="colorYellowSemiStrong">#FFE200</color>
+    <color name="colorYellowLight">#FFEB4F</color>
+    <color name="colorYellowLighter">#FFF185</color>
+    <color name="colorYellowDarker">#CD9C15</color>
+    <color name="colorOrangeDarker">#F69800</color>
+    <color name="colorProfileDashBoardBlue">#78D2C6</color>
+    <color name="colorHistoryDashBoard">#FFA84C</color>
+    <color name="colorRatingDashBoard">#B97ACD</color>
+    <color name="colorSettingsDashBoard">#F69800</color>
+    <color name="colorSwitchActive">#15DB15</color>
+    <color name="colorRedWarning">#e24444</color>
 </resources>
