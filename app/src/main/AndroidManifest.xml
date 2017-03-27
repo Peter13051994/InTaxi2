@@ -24,7 +24,6 @@
             android:label="Driver profile"/>
         <activity android:name=".RegisterActivity"
             android:label="Registration"/>
-
     </application>
     <receiver android:name="com.blackboard.androidtest.receiver.ConnectionChangeReceiver"
         android:label="NetworkConnection">
