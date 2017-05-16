@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="team_orange.intaxi.ProfileActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,76 +28,49 @@
                 android:background="@drawable/rounded_button"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="10dp"
-
                 />
-
-            <Switch
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/visbilitySwitch"
-                android:text="Hidden"
-                android:theme="@style/SCBSwitch"
-                android:layout_weight="2"
-                android:textAlignment="textEnd" />
-
         </LinearLayout>
     </LinearLayout>
-    <ScrollView
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <Button
-                android:paddingTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableTop="@drawable/profile128"
-                android:text="Profile"
-                android:textColor="@color/colorBlack"
-                android:textSize="15sp"
-                android:backgroundTint="@color/colorProfileDashBoardBlue"/>
-
-            <Button
-                android:paddingTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableTop="@drawable/history128"
-                android:text="History"
-                android:textColor="@color/colorBlack"
-                android:textSize="15sp"
-                android:backgroundTint="@color/colorHistoryDashBoard"/>
-
-            <Button
-                android:paddingTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableTop="@drawable/rating2"
-                android:text="Rating"
-                android:textColor="@color/colorBlack"
-                android:textSize="15sp"
-                android:backgroundTint="@color/colorRatingDashBoard"/>
-
-            <Button
-                android:paddingTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableTop="@drawable/settings128"
-                android:text="Settings"
-                android:textColor="@color/colorBlack"
-                android:textSize="15sp"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/latitude"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/longitude"/>
-        </LinearLayout>
-
-    </ScrollView>
+        android:layout_height="wrap_content"
+        android:text="Requests"
+        android:textAlignment="center"
+        android:textSize="20pt"
+        android:textColor="#000"
+        android:id="@+id/requestsTextView"/>
+    <ImageButton
+        android:id="@+id/visibilityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:layout_weight="0.43"
+        android:layout_gravity="center"
+        android:src="@drawable/button_hidden" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hidden"
+        android:textAlignment="center"
+        android:textSize="20pt"
+        android:textColor="#000"
+        android:id="@+id/visibilityTextView"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="10pt"
+        android:textColor="#000"
+        android:id="@+id/latitude"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="10pt"
+        android:textColor="#000"
+        android:id="@+id/longitude"/>
 </LinearLayout>
+
 

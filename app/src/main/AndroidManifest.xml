@@ -26,8 +26,16 @@
             android:label="Driver profile" />
         <activity
             android:name=".RegisterActivity"
-            android:label="Registration" />
-        <activity android:name=".EditProfile"></activity>
+            android:label="Registrácia" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC1UZ8VVYvMD0sGdUx2YIlzUoHWAqo2H3g" />
+
+        <activity
+            android:name=".gettingRequest"
+            android:label="Žiadosť o taxi" />
+        <activity android:name=".RequestsActivity"></activity>
     </application>
 
 </manifest>
